@@ -1,0 +1,23 @@
+version: "3.5"
+
+services:
+
+  epreaper-api:
+    container_name: epreaper-app
+    tty: true
+    stdin_open: true
+    build:
+      context: app
+    ports:
+      - "8000:8000"
+    expose:
+      - 8000
+    volumes:
+      - ./app:/app
+    restart: always
+    networks:
+      - epreaper-net
+
+networks:
+  epreaper-net:
+    driver: bridge

@@ -1,0 +1,7 @@
+bs4==0.0.2
+fastapi==0.115.11
+fastapi_offline_swagger_ui @ git+https://github.com/ahmetoner/fastapi-offline-swagger-ui@049eb7f0794da5aa7bfa042e8c6b03bb38a3b3b1
+jsbeautifier==1.15.4
+PyYAML==6.0.2
+requests==2.32.3
+uvicorn==0.34.0
